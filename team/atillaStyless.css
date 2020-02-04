@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    -webkit-animation: background 5s cubic-bezier(1,0,0,1) infinite;
+    animation: background 5s cubic-bezier(1,0,0,1) infinite;  
+  }
+  
+  
+  @-webkit-keyframes background {
+    0% { background-color: rgb(245, 35, 35); }
+    33% { background-color: rgb(250, 66, 81); }  
+    67% { background-color: rgb(192, 86, 86); }
+    100% { background-color: rgb(5, 2, 2); }
+  }
+  
+  @keyframes background {
+    0% { background-color: rgb(245, 35, 35); }
+    33% { background-color: rgb(250, 66, 81); }  
+    67% { background-color: rgb(192, 86, 86); }
+    100% { background-color: rgb(5, 2, 2); }
+  }
+
+.box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxleft{
+    display: flex;
+    justify-content: flex-start;
+    margin: 7em 0 15em 15em;
+    border: none;
+    transition: all 0.3s ease-in;
+    border-radius: 100px;
+    
+}
+
+#text{
+    text-align: justify;
+    width: 15em;
+    font-family: 'Questrial', sans-serif;
+    font-size: 30px;
+    margin: 50px;
+    animation:text 7s 1s both;
+    color: white;
+    
+    
+}
+
+@keyframes text{0%{transform:translateY(-45px);animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{transform:translateY(-24px);animation-timing-function:ease-in}65%{transform:translateY(-12px);animation-timing-function:ease-in}82%{transform:translateY(-6px);animation-timing-function:ease-in}93%{transform:translateY(-4px);animation-timing-function:ease-in}25%,55%,75%,87%{transform:translateY(0);animation-timing-function:ease-out}100%{transform:translateY(0);animation-timing-function:ease-out;opacity:1}}
+
+#atillaPhoto{
+    width: 25em;
+    margin-right: 2em;
+}
+
